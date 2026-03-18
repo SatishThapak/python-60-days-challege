@@ -57,6 +57,7 @@ Python has a dynamic data type system, meaning you don’t need to declare the t
 - Boolean Values
 - List, Tuple, and Dictionary
 
+```python
 Examples:
 a = "Raw"    # String Data Type
 a = 10       # Integer Data Type
@@ -72,4 +73,7 @@ b = 2.0
 print(b, "is of type", type(b))
 
 b = 1+2j
-print(b, "is complex number?", isinstance(b, complex))
+print(b, "is complex number?", is instance(b, complex))
+
+```
+-----
