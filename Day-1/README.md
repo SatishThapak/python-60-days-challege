@@ -77,3 +77,73 @@ print(b, "is complex number?", is instance(b, complex))
 
 ```
 -----
+
+# Scope of Variables
+There are broadly two kinds of scopes in Python − 
+- Global scope
+- Local scope
+
+# Global Scope :
+A variable/name declared in the top-level segment (__main__) of a program is said to have a global scope and is usable inside the whole program (Can be accessed from anywhere in the program).
+
+In Python, a variable declared outside a function is known as a global variable. This means that a global variable can be accessed from inside or outside of the function.
+
+Example:
+
+```python
+x = "Global Variable"  # defined outside of the fucntion foo()
+def foo(): 
+    print("Value of x: ", x) 
+foo()
+```
+Here, we created a global variable x = "Global Variable". Then, we created a function foo to print the value of the global variable from inside the function. 
+We get the output : Global Variable
+
+Thus we can conclude that we can access a global variable from inside any function.
+
+What if you want to change the value of a Global Variable from inside a function?
+```python
+x = "Global Variable" 
+def foo(): 
+    x=x-1
+    print("Value of x: ", x) 
+foo()
+
+In this code block, we tried to update the value of the global variable x. We get an output as:
+
+UnboundLocalError: local variable 'x' referenced before assignment
+```
+
+This happens because, when the command x=x-1, is interpreted, Python treats this x as a local variable and we have not defined any local variable x inside the function foo().
+
+
+# Local Scope:
+The variables which are defined inside a function body have a local scope. This implies that local variables can be accessed only inside the function in which they are declared.
+
+We declare a local variable inside a function. Consider the given function definition:
+
+``` python
+def func():
+    name = "Satish Thapak"
+    print(name)
+
+func()
+We get the output as: Satish Thapak
+ 
+Accessing A Local Variable Outside The Scope
+
+def func():
+    name = "Satish Thapak"
+
+func()
+print(name)
+ 
+In the above code, we declared a local variable y inside the function foo(), and then we tried to access it from outside the function. We get the output as:
+
+NameError: name 'name' is not defined
+```
+We get an error because the lifetime of a local variable is the function it is defined in.
+
+Outside the function, the variable does not exist and cannot be accessed. In other words, a variable cannot be accessed outside its scope.
+
+---
