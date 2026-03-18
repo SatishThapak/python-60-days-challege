@@ -31,6 +31,7 @@ For example: The variable names Temp and temp are different.
 While writing a program, creating self-explanatory variable names helps a lot in increasing the readability of the code. However, too-long names can clutter up the program and make it difficult to read.
 
 Examples:
+```python
 Correct
 a1 = 5;
 _b2 = 10;
@@ -41,7 +42,7 @@ Incorrect
 23b = 10;
 1@ = 5;
 
-
+```
 
 ## Data Types
 In Python, data types define the kind of data a variable can hold.
