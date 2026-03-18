@@ -178,3 +178,74 @@ In the above code,  both global and local variables have the same name val. On p
 When we print the value of the variable inside func() it outputs Value of Local variable: 50. This is the local scope of the variable. In the local scope, it prints the value that it has been assigned inside the function.
 
 Similarly, when we print the variable outside func(), it outputs Value of Global variable: 1. This is the global scope of the variable, and the value of the global variable val is printed.
+
+---
+
+## Typecasting
+ 
+There may be times when you want to specify a type on to a variable. This can be done with type casting. Python is an OOP language, and as such, it uses classes to define data types, including its primitive types.
+
+Type casting is the method to convert from data type to another data type, according to user's requirements. This article introduces to the different type of casting supported by Python and how to implement them.
+
+Python supports two types of type casting –
+
+Implicit Type Conversion
+Explicit Type Conversion
+ 
+
+# 1. Implicit Type Conversion:
+ 
+In this, method, Python automatically converts one data type into another data type. There is no user intervention.
+```python
+val = 5
+print(type(val))
+ 
+output:
+
+#Python automatically converts val to int.
+< class 'int' >
+
+
+Example:
+
+a = 8.0
+b = 4.0
+m = a * b
+print(m)
+print(type(m))
+
+output:
+
+32.0
+< class 'float' 
+``` 
+
+# 2. Explicit Type Conversion
+
+In Explicit Type, the Conversion user needs to manually convert data types.
+
+Mainly in typecasting can be done with these data type functions:
+
+int() - int class to construct an integer literal.
+float() - float class to construct a float literal.
+str() - string class to construct a string literal.
+
+Let’s see some examples of typecasting:
+
+Example:
+```python
+# int variable
+a = 5.9
+
+# typecast to int 
+n = int(a)
+print(n)
+print(type(n))
+ 
+
+output:
+5
+<class 'int'>
+```
+ 
+Here, we are casting float into int data type with int() function.
