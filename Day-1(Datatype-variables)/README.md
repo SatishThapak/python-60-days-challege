@@ -181,7 +181,7 @@ Similarly, when we print the variable outside func(), it outputs Value of Global
 
 ---
 
-## Typecasting
+# Type-casting
  
 There may be times when you want to specify a type on to a variable. This can be done with type casting. Python is an OOP language, and as such, it uses classes to define data types, including its primitive types.
 
@@ -193,7 +193,7 @@ Implicit Type Conversion
 Explicit Type Conversion
  
 
-# 1. Implicit Type Conversion:
+## 1. Implicit Type Conversion:
  
 In this, method, Python automatically converts one data type into another data type. There is no user intervention.
 ```python
@@ -220,7 +220,7 @@ output:
 < class 'float' 
 ``` 
 
-# 2. Explicit Type Conversion
+## 2. Explicit Type Conversion
 
 In Explicit Type, the Conversion user needs to manually convert data types.
 
@@ -247,5 +247,5 @@ output:
 5
 <class 'int'>
 ```
- 
+
 Here, we are casting float into int data type with int() function.
