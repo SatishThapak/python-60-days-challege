@@ -147,3 +147,34 @@ We get an error because the lifetime of a local variable is the function it is d
 Outside the function, the variable does not exist and cannot be accessed. In other words, a variable cannot be accessed outside its scope.
 
 ---
+
+## The Lifetime of a Variable
+ 
+The time for which the variable exists in memory is called the lifetime of that variable:
+- The lifetime of a Global variable is the entire program run (i.e., they live in the memory as long as the program is being executed).
+- The lifetime of a Local variable is their function’s run (i.e., as long as their function is being executed).
+
+Global Variable And Local Variable With The Same Name
+
+Consider the code given:
+``` python
+val = 1 
+def func():
+  val = 50
+  print("Value of Local variable:", val)
+ 
+func() 
+print("Value of Global Variable:", val)
+```
+
+In this, we have declared a global variable val = 1 outside the function func(). Now, we re-declared a local variable inside the function func() with the same name val. Now, we try to print the values of val, inside, and outside the function. We observe the following output:
+
+```python
+Value of Local variable:: 50
+Value of Global variable:: 1
+ ```
+In the above code,  both global and local variables have the same name val. On printing the value of val we get a different result, because the variables have been declared in different scopes, i.e., the local scope inside func() and global scope outside func().
+
+When we print the value of the variable inside func() it outputs Value of Local variable: 50. This is the local scope of the variable. In the local scope, it prints the value that it has been assigned inside the function.
+
+Similarly, when we print the variable outside func(), it outputs Value of Global variable: 1. This is the global scope of the variable, and the value of the global variable val is printed.
