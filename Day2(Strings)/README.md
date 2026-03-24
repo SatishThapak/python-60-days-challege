@@ -11,13 +11,13 @@ print('Hello')
 - Specify the start index and the end index, separated by a colon, to return a part of the string.
 - example: Get the characters from position 1 to position 5 (not included):
 
----python
+```python
 b = "Hello, satish!"
 print(b[1:5])
 ```
 - Note: The first character has index 0.
 
 ----
-# Slice From the Start
+# Slice From the Start: 
 
 
