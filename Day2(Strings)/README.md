@@ -150,3 +150,8 @@ age = f"I am {5*7} years old"
 print(age)
 ```
 --- 
+
+## String Methods
+- Python has a set of built-in methods that you can use on strings.
+### Note: All string methods return new values. They do not change the original string.
+- Examples: capitalize(),casefold(),count() etc. there are many built-in methods.

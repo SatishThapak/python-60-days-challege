@@ -9,9 +9,8 @@
 '''
 
 txt="hello,world"
-print(txt[2:5])
-print(txt.upper())
+print("Sliced txt (index 2 to 5):", txt[2:6])
+print("Uppercase txt:", txt.upper())
+name = "Python"
+print(f"I love {name}")
 
-
-age = f"I am {5*7} years old"
-print(age)
