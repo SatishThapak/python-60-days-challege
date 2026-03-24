@@ -12,3 +12,6 @@ txt="hello,world"
 print(txt[2:5])
 print(txt.upper())
 
+
+age = f"I am {5*7} years old"
+print(age)
