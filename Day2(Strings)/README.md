@@ -20,6 +20,6 @@ print(b[1:5])
 - Note: The first character has index 0.
 
 ----
-# Slice From the Start: 
+### Slice From the Start: 
 
 
