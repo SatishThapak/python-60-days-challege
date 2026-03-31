@@ -58,4 +58,33 @@ print(bool(y))
 *= Multiply and assign x *= 4
 /= Divide and assign   x /= 2
 ```
+## 3. Comparison Operators
+- Used to compare values; return True or False
+## 4. Logical Operators
+- Used to combine conditional statements.
+**and** True if both are True
+**or**  True if at least one is True
+**not** Negates the condition
 
+## 5. Bitwise Operators
+- Operate at the binary level.
+```python
+& AND           5 & 3 = 1
+| OR            5 | 3 = 7
+^ XOR           5 ^ 3 = 6
+~ NOT          ~5 = -6
+<< Left shift   5 << 1 = 10
+>> Right shift  5 >> 1 = 2
+```
+## 6. Membership Operators
+- Check for membership in sequences.
+```python
+in  "a" in "apple"  True
+not in  "z" not in "apple"  True
+```
+## 7. Identity Operators
+- Check if two objects share the same memory location.
+```python   
+is x is y
+is not x is not y
+```
